@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="kk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Құпиялық саясаты — Fancy VPN</title>
+<meta name="description" content="Android-қа арналған қарапайым VPN. Бір батырма телефоныңызды Германиядағы шифрланған серверге қосады.">
+<link rel="alternate" hreflang="en" href="../privacy.html"><link rel="alternate" hreflang="ru" href="../ru/privacy.html"><link rel="alternate" hreflang="kk" href="../kk/privacy.html">
+<style>
+:root{
+  --paper:#F5F1FB; --ink:#22102F; --soft:#5E4C70; --rule:#DED3EC; --violet:#6E0FC2; --glow:#A000F0;
+  color-scheme: light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",Arial,sans-serif}
+a{color:var(--violet);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--glow);outline-offset:3px;border-radius:4px}
+.wrap{max-width:46rem;margin:0 auto;padding:0 1rem}
+header.top{border-bottom:1px solid var(--rule)}
+header.top .wrap{display:flex;flex-wrap:wrap;gap:.75rem 1.5rem;align-items:center;justify-content:space-between;padding-top:1rem;padding-bottom:1rem}
+.brand{font-weight:750;color:var(--ink);text-decoration:none;letter-spacing:-.01em}
+.brand small{display:block;font-weight:400;color:var(--soft);font-size:.8rem;letter-spacing:0}
+nav.lang{display:flex;gap:.25rem}
+nav.lang a{padding:.2rem .55rem;border-radius:999px;text-decoration:none;font-size:.9rem;color:var(--soft)}
+nav.lang a[aria-current]{background:var(--ink);color:var(--paper)}
+nav.pages{display:flex;flex-wrap:wrap;gap:.25rem 1.25rem;font-size:.95rem;padding:.75rem 0 0}
+nav.pages a{color:var(--soft)}
+nav.pages a[aria-current]{color:var(--ink);font-weight:650;text-decoration:none}
+
+/* Hero: the app's power button, glowing */
+.hero{display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:center;padding:4rem 0 3rem}
+.hero h1{font-size:clamp(2.6rem,9vw,4.6rem);line-height:1;letter-spacing:-.04em;margin:0 0 1.25rem;font-weight:800}
+.hero p{font-size:1.2rem;color:var(--soft);margin:0 0 1.75rem;max-width:30ch}
+.orb{width:9.5rem;height:9.5rem;border-radius:50%;position:relative;
+  background:radial-gradient(circle at 50% 50%,#2a0a45 0 52%,transparent 53%),
+             radial-gradient(circle,var(--glow) 0,rgba(160,0,240,.35) 45%,rgba(160,0,240,0) 70%);
+  box-shadow:0 0 0 4px #3DDC97 inset}
+.orb::before{content:"";position:absolute;inset:0;margin:auto;width:3.2rem;height:3.2rem;border-radius:50%;
+  border:6px solid #3DDC97;border-top-color:transparent;transform:rotate(0deg)}
+.orb::after{content:"";position:absolute;left:50%;top:2.55rem;width:6px;height:2rem;margin-left:-3px;border-radius:3px;background:#3DDC97}
+.store{display:inline-block;padding:.8rem 1.3rem;border-radius:.75rem;background:var(--ink);color:var(--paper);font-weight:650;text-decoration:none}
+.facts{list-style:none;padding:0;margin:0 0 3.5rem;border-top:1px solid var(--rule)}
+.facts li{padding:1rem 0;border-bottom:1px solid var(--rule)}
+h2{font-size:1.5rem;letter-spacing:-.02em;margin:2.5rem 0 .75rem}
+dl.req{display:grid;grid-template-columns:max-content 1fr;gap:.5rem 1.5rem;margin:1rem 0 3rem}
+dl.req dt{color:var(--soft)}
+dl.req dd{margin:0}
+.doc h1{font-size:clamp(2rem,6vw,2.8rem);letter-spacing:-.03em;line-height:1.1;margin:3rem 0 .5rem}
+.doc .date{color:var(--soft);margin:0 0 2rem}
+.doc h2{font-size:1.2rem;margin:2rem 0 .5rem}
+.doc p{margin:0 0 1rem;max-width:68ch}
+footer{border-top:1px solid var(--rule);margin-top:3rem}
+footer .wrap{padding-top:1.5rem;padding-bottom:2.5rem;color:var(--soft);font-size:.9rem}
+@media (max-width:560px){
+  .hero{grid-template-columns:1fr;padding-top:2.5rem}
+  .orb{order:-1;width:7rem;height:7rem}
+  .orb::before{width:2.4rem;height:2.4rem;border-width:5px}
+  .orb::after{top:1.85rem;height:1.5rem;width:5px;margin-left:-2.5px}
+  dl.req{grid-template-columns:1fr;gap:.1rem}
+  dl.req dd{margin-bottom:.6rem}
+}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <div>
+    <a class="brand" href="../kk/index.html">Fancy VPN<small>«БАГ-ЛАГ» ЖШС</small></a>
+    <nav class="pages" aria-label="Pages"><a href="../kk/index.html">Басты бет</a><a href="../kk/privacy.html" aria-current="page">Құпиялық саясаты</a><a href="../kk/terms.html">Пайдалану шарттары</a></nav>
+  </div>
+  <nav class="lang" aria-label="Language"><a href="../privacy.html" hreflang="en" lang="en">English</a><a href="../ru/privacy.html" hreflang="ru" lang="ru">Русский</a><a href="../kk/privacy.html" hreflang="kk" lang="kk" aria-current="page">Қазақша</a></nav>
+</div></header>
+<main class="wrap">
+<article class="doc">
+<h1>Құпиялық саясаты</h1>
+<p class="date">Жаңартылған күні: 2026 жылғы 19 қазан</p>
+<h2>Біз туралы</h2><p>Fancy VPN қосымшасын («қосымша») «БАГ-ЛАГ» ЖШС, БСН 230340039627, 010000, Астана қ., Есіл ауданы, Түркістан көшесі, 10-үй, 212-пәтер («біз») басқарады. Осы саясат бойынша сұрақтарыңызды <a href="mailto:aibek.lukpanov@mail.ru">aibek.lukpanov@mail.ru</a> мекенжайына жіберіңіз.</p><h2>Қосымшаның жұмысына не қажет</h2><p>Құрылғы кілті. Алғаш қосылғанда қосымша телефонда шифрлау кілтін жасайды. Оның ашық бөлігі біздің серверге жіберіледі, ал сервер құрылғыға VPN желісіндегі ішкі мекенжай береді. Құрылғы қосыла алуы үшін біз ашық кілтті, осы мекенжайды және тіркелу күнін сақтаймыз. Кілттің жабық бөлігі телефоннан ешқашан шықпайды.</p><p>Біз кірген сайттарыңызды, DNS сұрауларыңызды және трафик мазмұнын жазбаймыз. Тіркеу сервері IP мекенжайлардың журналын жүргізбейді. Қосылып тұрған кезде VPN сервері ағымдағы қосылым мекенжайын тек трафикті жеткізу үшін жадта ұстайды; ол журналға жазылмайды.</p><h2>Телефондағы баптаулар</h2><p>Кейбір деректер тек құрылғыда сақталады, мысалы, жарнама көргеннен кейінгі жарнамасыз кезең таймері және жазылым күйі. Олар қосымша деректерін тазалағанда немесе қосымшаны жойғанда өшіріледі.</p><h2>Жазылым және төлемдер</h2><p>Жазылым төлемін Google Play өңдейді. Біз тек жазылым күйін (белсенді ме, жоқ па) аламыз. Картаңыздың деректерін көрмейміз.</p><h2>Жарнама</h2><p>Тегін нұсқада Google AdMob жарнамасы көрсетіледі. Жарнаманы көрсету және өлшеу үшін Google құрылғының жарнама идентификаторын, құрылғы туралы мәліметтерді және IP мекенжайы бойынша шамамен орналасқан жерді жинауы мүмкін. Бұл Google саясатымен реттеледі: <a href="https://policies.google.com/technologies/ads" rel="noopener">https://policies.google.com/technologies/ads</a>. Жарнама идентификаторын Android баптауларында қалпына келтіруге немесе жоюға болады. Жазылушыларға жарнама көрсетілмейді.</p><h2>DNS</h2><p>Қосылып тұрған кезде қосымша сайт мекенжайларын табу үшін Cloudflare-дің ашық DNS қызметін (1.1.1.1) пайдаланады. Cloudflare құпиялық саясаты: <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener">https://www.cloudflare.com/privacypolicy/</a>.</p><h2>Деректер кімге беріледі</h2><p>Біз деректеріңізді сатпаймыз. Оларды тек қосымшаның жұмысына қажет қызметтер өңдейді: Google (төлемдер мен жарнама), Cloudflare (DNS) және хостинг провайдеріміз (серверлер Германияда). Мемлекеттік органдарға мәліметтер тек Қазақстан Республикасының заңнамасында көзделген жағдайларда және тек біз шын мәнінде сақтайтын көлемде беріледі.</p><h2>Деректер қанша уақыт сақталады</h2><p>Құрылғы кілті мен VPN мекенжайы қызметті пайдаланып жүрген уақытта сақталады. Оларды жою үшін <a href="mailto:aibek.lukpanov@mail.ru">aibek.lukpanov@mail.ru</a> мекенжайына жазыңыз немесе қосымшаны пайдалануды тоқтатып, деректерді жоюды сұраңыз.</p><h2>Балалар</h2><p>Қосымша 13 жасқа толмаған балаларға арналмаған, біз олардың деректерін әдейі жинамаймыз.</p><h2>Өзгерістер</h2><p>Саясат өзгерсе, жаңа нұсқасын осы бетте жариялап, жоғарыдағы күнді жаңартамыз.</p>
+</article>
+</main>
+<footer><div class="wrap">Fancy VPN — «БАГ-ЛАГ» ЖШС өнімі. 010000, Астана қ., Есіл ауданы, Түркістан көшесі, 10-үй, 212-пәтер</div></footer>
+</body>
+</html>

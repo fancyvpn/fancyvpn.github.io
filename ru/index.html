@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fancy VPN — ТОО «БАГ-ЛАГ»</title>
+<meta name="description" content="Простой VPN для Android. Одна кнопка подключает телефон к зашифрованному серверу в Германии.">
+<link rel="alternate" hreflang="en" href="../index.html"><link rel="alternate" hreflang="ru" href="../ru/index.html"><link rel="alternate" hreflang="kk" href="../kk/index.html">
+<style>
+:root{
+  --paper:#F5F1FB; --ink:#22102F; --soft:#5E4C70; --rule:#DED3EC; --violet:#6E0FC2; --glow:#A000F0;
+  color-scheme: light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",Arial,sans-serif}
+a{color:var(--violet);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--glow);outline-offset:3px;border-radius:4px}
+.wrap{max-width:46rem;margin:0 auto;padding:0 1rem}
+header.top{border-bottom:1px solid var(--rule)}
+header.top .wrap{display:flex;flex-wrap:wrap;gap:.75rem 1.5rem;align-items:center;justify-content:space-between;padding-top:1rem;padding-bottom:1rem}
+.brand{font-weight:750;color:var(--ink);text-decoration:none;letter-spacing:-.01em}
+.brand small{display:block;font-weight:400;color:var(--soft);font-size:.8rem;letter-spacing:0}
+nav.lang{display:flex;gap:.25rem}
+nav.lang a{padding:.2rem .55rem;border-radius:999px;text-decoration:none;font-size:.9rem;color:var(--soft)}
+nav.lang a[aria-current]{background:var(--ink);color:var(--paper)}
+nav.pages{display:flex;flex-wrap:wrap;gap:.25rem 1.25rem;font-size:.95rem;padding:.75rem 0 0}
+nav.pages a{color:var(--soft)}
+nav.pages a[aria-current]{color:var(--ink);font-weight:650;text-decoration:none}
+
+/* Hero: the app's power button, glowing */
+.hero{display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:center;padding:4rem 0 3rem}
+.hero h1{font-size:clamp(2.6rem,9vw,4.6rem);line-height:1;letter-spacing:-.04em;margin:0 0 1.25rem;font-weight:800}
+.hero p{font-size:1.2rem;color:var(--soft);margin:0 0 1.75rem;max-width:30ch}
+.orb{width:9.5rem;height:9.5rem;border-radius:50%;position:relative;
+  background:radial-gradient(circle at 50% 50%,#2a0a45 0 52%,transparent 53%),
+             radial-gradient(circle,var(--glow) 0,rgba(160,0,240,.35) 45%,rgba(160,0,240,0) 70%);
+  box-shadow:0 0 0 4px #3DDC97 inset}
+.orb::before{content:"";position:absolute;inset:0;margin:auto;width:3.2rem;height:3.2rem;border-radius:50%;
+  border:6px solid #3DDC97;border-top-color:transparent;transform:rotate(0deg)}
+.orb::after{content:"";position:absolute;left:50%;top:2.55rem;width:6px;height:2rem;margin-left:-3px;border-radius:3px;background:#3DDC97}
+.store{display:inline-block;padding:.8rem 1.3rem;border-radius:.75rem;background:var(--ink);color:var(--paper);font-weight:650;text-decoration:none}
+.facts{list-style:none;padding:0;margin:0 0 3.5rem;border-top:1px solid var(--rule)}
+.facts li{padding:1rem 0;border-bottom:1px solid var(--rule)}
+h2{font-size:1.5rem;letter-spacing:-.02em;margin:2.5rem 0 .75rem}
+dl.req{display:grid;grid-template-columns:max-content 1fr;gap:.5rem 1.5rem;margin:1rem 0 3rem}
+dl.req dt{color:var(--soft)}
+dl.req dd{margin:0}
+.doc h1{font-size:clamp(2rem,6vw,2.8rem);letter-spacing:-.03em;line-height:1.1;margin:3rem 0 .5rem}
+.doc .date{color:var(--soft);margin:0 0 2rem}
+.doc h2{font-size:1.2rem;margin:2rem 0 .5rem}
+.doc p{margin:0 0 1rem;max-width:68ch}
+footer{border-top:1px solid var(--rule);margin-top:3rem}
+footer .wrap{padding-top:1.5rem;padding-bottom:2.5rem;color:var(--soft);font-size:.9rem}
+@media (max-width:560px){
+  .hero{grid-template-columns:1fr;padding-top:2.5rem}
+  .orb{order:-1;width:7rem;height:7rem}
+  .orb::before{width:2.4rem;height:2.4rem;border-width:5px}
+  .orb::after{top:1.85rem;height:1.5rem;width:5px;margin-left:-2.5px}
+  dl.req{grid-template-columns:1fr;gap:.1rem}
+  dl.req dd{margin-bottom:.6rem}
+}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <div>
+    <a class="brand" href="../ru/index.html">Fancy VPN<small>ТОО «БАГ-ЛАГ»</small></a>
+    <nav class="pages" aria-label="Pages"><a href="../ru/index.html" aria-current="page">Главная</a><a href="../ru/privacy.html">Политика конфиденциальности</a><a href="../ru/terms.html">Условия использования</a></nav>
+  </div>
+  <nav class="lang" aria-label="Language"><a href="../index.html" hreflang="en" lang="en">English</a><a href="../ru/index.html" hreflang="ru" lang="ru" aria-current="page">Русский</a><a href="../kk/index.html" hreflang="kk" lang="kk">Қазақша</a></nav>
+</div></header>
+<main class="wrap">
+<section class="hero">
+  <div>
+    <h1>Fancy VPN</h1>
+    <p>Простой VPN для Android. Одна кнопка подключает телефон к зашифрованному серверу в Германии.</p>
+    <span class="store" aria-disabled="true">Скоро в Google Play</span>
+  </div>
+  <div class="orb" role="img" aria-label="Fancy VPN"></div>
+</section>
+<ul class="facts"><li>Шифрование WireGuard — современный и быстрый протокол VPN.</li><li>Мы не ведём журналы посещённых сайтов и содержимого трафика.</li><li>Бесплатно с рекламой или $1 в месяц без неё.</li></ul>
+<h2>Компания</h2>
+<p>Fancy VPN разрабатывает и поддерживает ТОО «БАГ-ЛАГ», компания зарегистрирована в Республике Казахстан.</p>
+<dl class="req">
+  <dt>Название</dt><dd>ТОО «БАГ-ЛАГ»</dd>
+  <dt>БИН</dt><dd>230340039627</dd>
+  <dt>Адрес</dt><dd>010000, г. Астана, район Есиль, ул. Туркистан, д. 10, кв. 212</dd>
+  <dt>Телефон</dt><dd><a href="tel:+77073570352">+7 707 357 03 52</a></dd>
+  <dt>Эл. почта</dt><dd><a href="mailto:aibek.lukpanov@mail.ru">aibek.lukpanov@mail.ru</a></dd>
+</dl>
+</main>
+<footer><div class="wrap">Fancy VPN — продукт ТОО «БАГ-ЛАГ». 010000, г. Астана, район Есиль, ул. Туркистан, д. 10, кв. 212</div></footer>
+</body>
+</html>
