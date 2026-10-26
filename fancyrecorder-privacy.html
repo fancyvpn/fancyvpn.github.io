@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Privacy policy — Fancy Recorder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+/* Layout: a single reading column, two language sections, a slim sticky language switch */
+:root{
+  --bg:#faf8fd; --surface:#f1ecf8; --fg:#1c1626; --muted:#5d5370; --rule:#ddd3ea;
+  --accent:#7a1fd1; --accent-ink:#ffffff;
+  --display:"Manrope", "Segoe UI", system-ui, sans-serif;
+  --body:"Source Serif 4", Georgia, "Times New Roman", serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0e0a14; --surface:#1a1324; --fg:#ece6f5; --muted:#a99cbd; --rule:#2e2440;
+  --accent:#b98bff; --accent-ink:#14091f; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0e0a14; --surface:#1a1324; --fg:#ece6f5; --muted:#a99cbd; --rule:#2e2440;
+  --accent:#b98bff; --accent-ink:#14091f; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.65;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));}
+.wrap{max-width:44rem;margin:0 auto;padding-block:2.5rem 4rem}
+header.top{display:flex;flex-direction:column;gap:.75rem;padding-bottom:1.5rem;border-bottom:1px solid var(--rule)}
+.app{display:flex;align-items:center;gap:.75rem;font-family:var(--display);font-weight:800;font-size:1.05rem;letter-spacing:.01em}
+.dot{width:2rem;height:2rem;border-radius:50%;background:radial-gradient(circle at 50% 42%, #a300f5 0 35%, #4a0078 60%, #07000d 100%);
+  display:grid;place-items:center;flex:none}
+.dot::after{content:"";width:.6rem;height:.6rem;border-radius:50%;background:#ff4d6d;box-shadow:0 0 0 .2rem #fff}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(1.8rem,5vw,2.4rem);line-height:1.15;margin:0;text-wrap:balance}
+.meta{color:var(--muted);font-size:.95rem;margin:0}
+nav.lang{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);display:flex;gap:.5rem;padding-block:.75rem;border-bottom:1px solid var(--rule)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+nav.lang a{font-family:var(--display);font-weight:700;font-size:.9rem;text-decoration:none;color:var(--accent);padding:.35rem .8rem;border:1px solid var(--rule);border-radius:999px}
+nav.lang a:hover,nav.lang a:focus-visible{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);outline:none}
+section.lang-block{padding-top:2rem}
+h2{font-family:var(--display);font-weight:800;font-size:1.45rem;margin:0 0 .5rem}
+h3{font-family:var(--display);font-weight:700;font-size:1.05rem;margin:2rem 0 .4rem;letter-spacing:.005em}
+p,ul{margin:.4rem 0}
+ul{padding-left:1.2rem}
+li{margin:.25rem 0}
+.summary{background:var(--surface);border-radius:.75rem;padding:1rem 1.25rem;margin:1rem 0 .5rem}
+.summary ul{margin:0}
+.mail{font-family:var(--display);font-weight:700;color:var(--accent);user-select:all;word-break:break-all}
+a{color:var(--accent)}
+hr{border:0;border-top:1px solid var(--rule);margin:3rem 0 0}
+footer{color:var(--muted);font-size:.9rem;margin-top:2.5rem}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="top">
+    <div class="app"><span class="dot" aria-hidden="true"></span>Fancy Recorder</div>
+    <h1>Политика конфиденциальности · Privacy Policy</h1>
+    <p class="meta">Приложение для Android <b>kz.fancyrecorder.app</b> · Действует с 26 октября 2026 г. / Effective October 26, 2026</p>
+  </header>
+
+  <nav class="lang" aria-label="Язык / Language">
+    <a href="#ru">Русский</a>
+    <a href="#en">English</a>
+  </nav>
+
+  <section class="lang-block" id="ru" lang="ru">
+    <h2>Русский</h2>
+    <div class="summary">
+      <ul>
+        <li>Ваши записи экрана и звук хранятся только на вашем телефоне. Мы их не получаем.</li>
+        <li>У приложения нет аккаунтов и своих серверов.</li>
+        <li>Рекламу показывает Google AdMob, оплату подписки проводит Google Play.</li>
+      </ul>
+    </div>
+
+    <h3>1. Кто мы</h3>
+    <p>Приложение Fancy Recorder (далее — «приложение») публикует разработчик FancyVPN. По вопросам конфиденциальности пишите: <span class="mail">aybek.lukpanov@gmail.com</span></p>
+
+    <h3>2. Записи экрана и звук</h3>
+    <p>Приложение записывает экран и звук только после того, как вы нажмёте «Начать запись» и подтвердите системный запрос Android. Во время записи Android показывает уведомление.</p>
+    <ul>
+      <li>Видео сохраняются на вашем устройстве в папке <b>Movies/FancyRecorder</b>.</li>
+      <li>Мы не загружаем записи на свои серверы и не имеем к ним доступа.</li>
+      <li>Видео покидает телефон только если вы сами им поделитесь через кнопку «Поделиться».</li>
+      <li>Вы можете удалить любую запись в приложении или в галерее.</li>
+    </ul>
+
+    <h3>3. Разрешения</h3>
+    <ul>
+      <li><b>Запись аудио (микрофон)</b> — чтобы записывать звук приложений и, если вы включили переключатель, звук с микрофона. Звук сохраняется только в ваше видео.</li>
+      <li><b>Запись экрана</b> — системное разрешение Android, которое вы даёте перед каждой записью.</li>
+      <li><b>Уведомления</b> — чтобы показывать идущую запись и кнопку «Остановить».</li>
+      <li><b>Интернет</b> — для показа рекламы и проверки подписки.</li>
+    </ul>
+
+    <h3>4. Реклама (Google AdMob)</h3>
+    <p>В приложении есть баннер и реклама с вознаграждением от Google AdMob. Чтобы показывать и измерять рекламу, Google может собирать данные об устройстве: рекламный идентификатор, IP-адрес, сведения о взаимодействии с рекламой и о сбоях. Эти данные обрабатывает Google по своим правилам: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">policies.google.com/technologies/ads</a>.</p>
+    <p>В странах, где это требуется (например, в ЕС и Великобритании), приложение спрашивает согласие на персонализированную рекламу. Изменить выбор можно кнопкой «Настройки конфиденциальности» на главном экране. Отключить персонализацию на всём устройстве можно в настройках Android: Google → Реклама.</p>
+
+    <h3>5. Подписка (Google Play)</h3>
+    <p>Подписку «Без рекламы» оформляет и списывает Google Play. Мы не получаем данные вашей банковской карты. Приложение лишь проверяет у Google Play, активна ли подписка. Отменить её можно в Google Play: Профиль → Платежи и подписки.</p>
+
+    <h3>6. Что мы не делаем</h3>
+    <ul>
+      <li>Не продаём ваши данные.</li>
+      <li>Не собираем имя, телефон, контакты или геолокацию.</li>
+      <li>Не храним ваши данные на своих серверах.</li>
+    </ul>
+
+    <h3>7. Дети</h3>
+    <p>Приложение не предназначено для детей младше 13 лет, и мы сознательно не собираем их данные.</p>
+
+    <h3>8. Изменения</h3>
+    <p>Если политика изменится, мы обновим эту страницу и дату вверху.</p>
+  </section>
+
+  <hr>
+
+  <section class="lang-block" id="en" lang="en">
+    <h2>English</h2>
+    <div class="summary">
+      <ul>
+        <li>Your screen recordings and audio stay on your phone. We never receive them.</li>
+        <li>The app has no accounts and no servers of its own.</li>
+        <li>Ads are served by Google AdMob; subscriptions are processed by Google Play.</li>
+      </ul>
+    </div>
+
+    <h3>1. Who we are</h3>
+    <p>Fancy Recorder (the “app”) is published by the developer FancyVPN. For privacy questions, contact: <span class="mail">aybek.lukpanov@gmail.com</span></p>
+
+    <h3>2. Screen recordings and audio</h3>
+    <p>The app records the screen and audio only after you tap “Start recording” and confirm Android’s system prompt. Android shows a notification while recording.</p>
+    <ul>
+      <li>Videos are saved on your device in <b>Movies/FancyRecorder</b>.</li>
+      <li>We do not upload recordings to any server and have no access to them.</li>
+      <li>A video leaves your phone only if you share it yourself with the “Share” button.</li>
+      <li>You can delete any recording in the app or in your gallery.</li>
+    </ul>
+
+    <h3>3. Permissions</h3>
+    <ul>
+      <li><b>Record audio (microphone)</b> — to capture app audio and, if you turn it on, microphone audio. Audio is saved only into your video.</li>
+      <li><b>Screen capture</b> — Android’s system permission that you grant before each recording.</li>
+      <li><b>Notifications</b> — to show the ongoing recording and the “Stop” button.</li>
+      <li><b>Internet</b> — to show ads and check your subscription.</li>
+    </ul>
+
+    <h3>4. Advertising (Google AdMob)</h3>
+    <p>The app shows a banner and rewarded ads from Google AdMob. To serve and measure ads, Google may collect device data such as the advertising ID, IP address, ad interactions and crash data. Google processes this data under its own policies: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">policies.google.com/technologies/ads</a>.</p>
+    <p>Where required (for example in the EU and UK), the app asks for consent to personalized ads. You can change your choice with the “Privacy settings” button on the Home tab, or turn off ad personalization for the whole device in Android settings: Google → Ads.</p>
+
+    <h3>5. Subscription (Google Play)</h3>
+    <p>The “Remove ads” subscription is purchased and billed through Google Play. We never receive your card details; the app only asks Google Play whether your subscription is active. You can cancel it in Google Play: Profile → Payments &amp; subscriptions.</p>
+
+    <h3>6. What we don’t do</h3>
+    <ul>
+      <li>We don’t sell your data.</li>
+      <li>We don’t collect your name, phone number, contacts or location.</li>
+      <li>We don’t store your data on our servers.</li>
+    </ul>
+
+    <h3>7. Children</h3>
+    <p>The app is not directed to children under 13, and we do not knowingly collect their data.</p>
+
+    <h3>8. Changes</h3>
+    <p>If this policy changes, we will update this page and the date at the top.</p>
+  </section>
+
+  <footer>© 2026 FancyVPN · Fancy Recorder</footer>
+</div>
+</body>
+</html>
